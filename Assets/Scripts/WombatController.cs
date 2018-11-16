@@ -6,7 +6,7 @@ public class WombatController : MonoBehaviour {
 	
 	public float moveSpeed = 4;
 	private Vector3 forward, right;
-	//public Rigidbody rb;
+	public Rigidbody rb;
 
 	// Use this for initialization
 	void Start ()
@@ -22,6 +22,12 @@ public class WombatController : MonoBehaviour {
 	{
 		if (Input.anyKey)
 			Move();
+		
+		if (gameObject.transform.position.y < -10)
+		{
+			Destroy(gameObject);
+			print("You've dropped your wombat!");
+		}
 	}
 
 	void Move()
@@ -33,9 +39,10 @@ public class WombatController : MonoBehaviour {
 		Vector3 heading = Vector3.Normalize(rightMovement + forwardMovement);
 
 		transform.forward = heading; //makes rotation happen
-		transform.position += rightMovement; //makes right movement happen
-		transform.position += forwardMovement; //makes forward movement happen
-		
-		
+		//transform.position += rightMovement; //makes right movement happen
+		//transform.position += forwardMovement; //makes forward movement happen
+
+		rb.AddForce(forwardMovement * moveSpeed);
+		rb.AddForce(rightMovement * moveSpeed);
 	}
 }
