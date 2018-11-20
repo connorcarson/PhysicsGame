@@ -130,78 +130,16 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="PoopMaker.cs" t="Include" />
+          <e p="PoopMover.cs" t="Include" />
+          <e p="SlingshotScripts" t="Include">
+            <e p="DragSlingShot.cs" t="Include" />
+            <e p="Slingshot.cs" t="Include" />
+            <e p="SlingshotTester.cs" t="Include" />
+            <e p="SlingshotTester2.cs" t="Include" />
+          </e>
           <e p="WombatController.cs" t="Include" />
           <e p="WombatMaker.cs" t="Include" />
-        </e>
-        <e p="UltimateIsometricToolkit" t="Include">
-          <e p="changelog.txt" t="Include" />
-          <e p="Editor" t="Include">
-            <e p="ExposeProperties.cs" t="Include" />
-            <e p="IsoSnapping.cs" t="Include" />
-            <e p="IsoSortingEditor.cs" t="Include" />
-            <e p="IsoTransformEditor.cs" t="Include" />
-            <e p="Reminder.cs" t="Include" />
-            <e p="reminderHelper.cs" t="Include" />
-          </e>
-          <e p="Graphics" t="Include">
-            <e p="Misc" t="Include">
-              <e p="kenney-backgroundelements" t="Include">
-                <e p="Spritesheet" t="Include">
-                  <e p="bgElements_spritesheet.xml" t="Include" />
-                </e>
-              </e>
-              <e p="moreenemiesanimations" t="Include">
-                <e p="Spritesheets" t="Include">
-                  <e p="alienBeige.xml" t="Include" />
-                  <e p="alienBlue.xml" t="Include" />
-                  <e p="alienGreen.xml" t="Include" />
-                  <e p="alienPink.xml" t="Include" />
-                  <e p="aliens.xml" t="Include" />
-                  <e p="alienYellow.xml" t="Include" />
-                  <e p="enemies.xml" t="Include" />
-                </e>
-              </e>
-            </e>
-            <e p="Platformer" t="Include">
-              <e p="abstractTiles_sheet.xml" t="Include" />
-              <e p="allTiles_sheet.xml" t="Include" />
-              <e p="platformerTiles_sheet.xml" t="Include" />
-              <e p="voxelTiles_sheet.xml" t="Include" />
-            </e>
-          </e>
-          <e p="License.txt" t="Include" />
-          <e p="README.txt" t="Include" />
-          <e p="Scripts" t="Include">
-            <e p="Core" t="Include">
-              <e p="HeuristicSorting.cs" t="Include" />
-              <e p="IsoSorting.cs" t="Include" />
-              <e p="IsoTransform.cs" t="Include" />
-              <e p="SortingStrategy.cs" t="Include" />
-            </e>
-            <e p="Examples" t="Include">
-              <e p="SmoothCamera2d.cs" t="Include" />
-            </e>
-            <e p="External" t="Include">
-              <e p="EasingFunctions.cs" t="Include" />
-              <e p="ExposePropertyAttribute.cs" t="Include" />
-              <e p="LinqExtensions.cs" t="Include" />
-              <e p="PinchZoom.cs" t="Include" />
-            </e>
-            <e p="IsoController" t="Include">
-              <e p="SimpleIsoObjectController.cs" t="Include" />
-            </e>
-            <e p="Test" t="Include">
-              <e p="OnMouseTestScript.cs" t="Include" />
-            </e>
-            <e p="Utils" t="Include">
-              <e p="EventProcessor.cs" t="Include" />
-              <e p="GizmosExtension.cs" t="Include" />
-              <e p="Isometric.cs" t="Include" />
-              <e p="MethodExtensionForMonoBehaviourTransform.cs" t="Include" />
-              <e p="ProcedualMeshes.cs" t="Include" />
-              <e p="Singleton.cs" t="Include" />
-            </e>
-          </e>
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
@@ -213,6 +151,6 @@
       </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_PhysicsGame.717147052.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_PhysicsGame.876136420.00" t="ExcludeRecursive" />
   </component>
 </project>

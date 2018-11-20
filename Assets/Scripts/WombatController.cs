@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 
 public class WombatController : MonoBehaviour {
@@ -7,6 +8,11 @@ public class WombatController : MonoBehaviour {
 	public float moveSpeed = 4;
 	private Vector3 forward, right;
 	public Rigidbody rb;
+	public GameObject poopCube;
+	private GameObject[] poopList;
+	public Vector3 poopOffset;
+	public bool canPoop = true;
+	private int maxNumPoops = 5;
 
 	// Use this for initialization
 	void Start ()
@@ -19,7 +25,7 @@ public class WombatController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update ()
-	{
+	{	
 		if (Input.anyKey)
 			Move();
 		
@@ -28,6 +34,8 @@ public class WombatController : MonoBehaviour {
 			Destroy(gameObject);
 			print("You've dropped your wombat!");
 		}
+		
+		MakePoop();
 	}
 
 	void Move()
@@ -44,5 +52,20 @@ public class WombatController : MonoBehaviour {
 
 		rb.AddForce(forwardMovement * moveSpeed);
 		rb.AddForce(rightMovement * moveSpeed);
+	}
+	
+	void MakePoop()
+	{
+/*		poopList = GameObject.FindGameObjectsWithTag("isPoop");
+		
+		if (poopList[maxNumPoops])
+		{
+			canPoop = false;
+		}*/
+
+		if (Input.GetKeyDown(KeyCode.P) && canPoop)
+		{
+			GameObject poopProjectile = Instantiate(poopCube, gameObject.transform.position + poopOffset, gameObject.transform.rotation);
+		}
 	}
 }
