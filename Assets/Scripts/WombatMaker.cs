@@ -26,7 +26,6 @@ public class WombatMaker : MonoBehaviour
 			MakeWombat();
 			print("I got you a new wombat!");
 		}
-		
 	}
 	
 	void MakeWombat()
